@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vectores</title>
+  <link rel="stylesheet" href="../main/boton.css">
+  <link rel="stylesheet" href="../main/section.css">
+  <link rel="stylesheet" href="../main/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <header>
+        <h1>Ejercicios sobre <span id="typed"></span></h1>
+    </header>
+
+  <main class="container">
+    <section id="Componentes">
+      <h3>Leyes de Newton</h3>
+      <p>A un objeto se le ejerce una fuerza de \(20N\) obteniendo una aceleración de \(2 m/s^2\), ¿cuál es la masa del objeto, qué fuerza se debería aplicar para obtener una aceleración de \(3 m/s^2\)?</p>
+      <div id="procedimiento-1" class="hidden">
+        <h3>Procedimiento:</h3>
+        <p>
+          1. Sabiendo que \(F = m\cdot a\).<br><br>
+          2. Despejamos y tenemos que \(m = F/a\)<br><br>
+          3. Sustituimos y obtemenos que \(m=10 kg\)<br><br>
+          4. Ahora con \(F = m\cdot a\)<br><br>
+          5. Sustitumos y tenemos que \(F = 10kg\cdot 3 m/s^2\).<br><br>
+          6. Por lo tanto \(F=30 N\).<br><br>
+        </p>
+      </div><br>
+      <button id="mostrar-solucion-1">Solución</button>
+    </section>
+    <section id="Posicion">
+      <h3>Plano inclinado</h3>
+      <p>Una superficie con un ángulo de inclinación de 45°, con un objeto que pesa 10 kg y la Fuerza de fricción es de 40N, calcula el coeficiente de fricción y la fuerza horizontal del objeto</p>
+      <div id="procedimiento-3" class="hidden">
+        <h3>Solución:</h3>
+        <p>
+          1. Sabiendo que \(F_{fricción} = \mu\cdot F_{normal}\).<br><br>
+          2. Despejamos y tenemos que \(\mu = frac{F_{fricción}}{F_{normal}}\)<br><br>
+          3. Calculamos \(F_{normal}\) sabiendo que \(F_{normal}=m\cdot g\cdot \cos(45°)\)<br><br>
+          4. Tenemos ahora que \(F_{normal} \approx 69.83 N\)<br><br>
+          4. Sustitumos y tenemos que \(\mu = \frac{40 N}{98.1 N}\).<br><br>
+          5. Por lo tanto \(\mu\approx 0.41\).<br><br>
+          6. Ahora sabiendo que \(F_x = F_{normal}\cdot \sin\theta\)<br><br> 
+          7. Sustitumos y tenemos que \(F_x = 98.1 N\cdot \sqrt{\frac{1}{2}}\).<br><br>
+          8. Por lo tanto \(F_x \approx 69.37 N\)
+        </p>
+      </div><br>
+      <button id="mostrar-solucion-3">Solución</button>
+    </section>
+    <section id="Unitario">
+      <h3>OAS</h3>
+      <p>Un péndulo es lanzado con un \(\theta=10°\) cuya longitud es de 20 cm, ¿en qué posición se encontrará a 2s?</p>
+      <div id="procedimiento-4" class="hidden">
+        <h3>Procedimiento:</h3>
+        <p>
+          1. Calculamos \(T\) sabiendo que \(T = 2\pi\cdot \sqrt{\frac{L}{g}}\)<br><br>
+          2. Sustituimos y tenemos que \(T=2\pi\cdot \sqrt{\frac{0.2 m}{9.81 m/s^2}}\)<br><br>
+          3. Obteniendo que \(T \approx 0.897 s\).<br><br>
+          4. Ahora sabiendo que \(w = \frac{2\pi}{T}\). <br><br>
+          5. Tenemos que \(w\approx \frac{360°}{0.897}\)<br><br>
+          6. Por lo tanto \(w\approx 401.34°\)<br><br>
+          7. Ahora con \(\theta(t)=\theta_0\cos{wt+\phi}\)<br><br>
+          8. Sustituimos y tenemos que \(\theta(t)10°\cdot\cos{401.34°\cdot 2+0}\)<br><br>
+          9. Así tenemos que \(\theta(t) \approx 1.27°\)
+        </p>
+      </div><br>
+      <button id="mostrar-solucion-4">Solución</button>
+    </section>
+    <section id="Unitario">
+      <h3>Torque</h3>
+      <p>Dado una palanca cuyo torque es de \(0.3Nm\), su largo es de 15 cm, ¿qué fuerza debe aplicarse para que ejerzca un giro de 150°?</p>
+      <div id="procedimiento-2" class="hidden">
+        <h3>Procedimiento:</h3>
+        <p>
+          1. Sabiendo que \(\tau = r\cdot F\cdot \sin\theta\)<br><br>
+          2. Despejamos y tenemos que \(F=\frac{\tau}{r\cdot\sin\theta}\)<br><br>
+          3. Sustituyendo \(F=\frac{0.3Nm}{0.15m\cdot\sin150°}\).<br><br>
+          4. Tenemos así que \(F = 4 N\)
+        </p>
+      </div><br>
+      <button id="mostrar-solucion-2">Solución</button>
+    </section>
+    <section id="Unitario">
+      <h3>Conjunto</h3>
+      <p>Un resorte cuya constante elástica es de \(150 N/m\) se encuentra paralelo a un plano inclinado a \(30°\) cuyo coeficiente de fricción es de 0.1, en el extremo del resorte se encuentra un objeto cuya masa es de \(5 kg\), al otro extremo del plano se encuentra una palanca cuya fuerza de torque es de \(2 Nm\) y su longitud es de \(1m\), qué distancia debe de estar comprimido el resorte para que el objeta tenga la fuerza suficiente para girar la palanca 90°</p>
+      <div id="procedimiento-5" class="hidden">
+        <h3>Procedimiento:</h3>
+        <p>
+          1.Calculamos la fuerza para mover la palanca, usando \(\tau = r\cdot F\cdot\ \sin\theta\)<br><br>
+          2.Despejamos y tenemos que \(F=\frac{\tau}{r\cdot \sin\theta}\)<br><br>
+          3.Sustituyendo tenemos que \(F=\frac{2Nm}{1m}=2N\)<br><br>
+          4.Calculemos la fuerza de fricción con \(F_{fricción}=\mu \cdot m\cdot g\cdot \cos\theta\)<br><br>
+          5.Sustituimos y tenemos que \(F_{fricción}=0.1\cdot 5kg\cdot 9.81m/s^2\cdot \cos30°\approx 4.25N \)<br><br> 
+          6.Calculemos la fuerza paralela al plano con \(F_x=m\cdot g\cdot\sin\theta\)<br><br>
+          7.Tenemos que \(F_x=5kg\cdot 9.81m/s^2\cdot\sin30°=24.525\)<br><br>
+          8.Calculamos la fuerza total con \(F_{total}=F_{torque}+F_{fricción}+F_x\)<br><br>
+          9.Sustituimos y tenemos que \(F_{total}=2N+4.25N+24.525N=30.775N\)<br><br>
+          10.Calculamos la distancia para comprimir el resorte usando \(F=-k\cdot x\)<br><br>
+          11.Despejamos y obtenemos \(x=\frac{F}{-k}\)<br><br>
+          12.Sustituimos y tenemos que \(x=\frac{30.775N}{-150N/m}\approx 20.52 cm\)
+        </p>
+      </div>
+      <button id="mostrar-solucion-5">Solución</button>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; Francisco García Ortíz</p>
+  </footer>
+  <script type="module" src="../java/java.js"></script>
+  <script type="module" src="../java/index.js"></script>
+</body>
+</html>

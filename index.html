@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Física</title>
+  <link rel="stylesheet" href="main/section.css">
+  <link rel="stylesheet" href="main/boton.css">
+  <link rel="stylesheet" href="main/divid.css">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <header>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <h1>Aprendiendo sobre <span id="typed"></span></h1>
+    </header>
+
+  <main class="container">
+    <section class="seccion">
+      <h2>Leyes de Newton</h2>
+      <h3>Primera ley de Newton</h3>
+      <p>También llamada como ley de inercia, la cual consiste en que todo cuerpo permanece en reposo o en movimiento rectilíneo uniforme a menos que una fuerza actúe sobre el</p>
+      <h3>Segunda ley de Newton</h3>
+      <p>También llamada como ley de fuerza y aceleración, La aceleración de un objeto es proporcional a la fuerza neta que actúa sobre él e inversamente proporcional a su masa, representado matemáticamente como: \(F = m\cdot a\)</p>
+      <h3>Tercera ley de Newton</h3>
+      <p>También llamada como ley de acción-reacción, la cual dice que, a toda fuerza de acción le corresponde una fuerza de reacción igual en magnitud pero en dirección opuesta el</p>
+    </section>
+    <section class="seccion-dos-columnas">
+      <h2>Plano inclinado</h2>
+      <div class="columna-texto">
+	      <p>Es una superficie inclinada sobre el plano horizontal, al tener un cuerpo sobre este plano, se cuentan con las siguientes fórmulas:</p>
+	      <p>\(\vec{F}_{gravitacional} = m\cdot g\)</p>
+	      <p>\(\vec{F}_x = \vec{F}_{gravitacional}\cdot \sin{\theta}\)</p>
+	      <p>\(\vec{F}_{normal} = \vec{F}_{gravitacional}\cdot \cos{\theta}\)</p>
+	      <p>\(\vec{F}_{fricción} = \mu \cdot \vec{F}_{normal}\)</p>
+	  </div>
+	  <div class="columna-imagen">
+            <img src="img/plano.jpg" alt="Imagen descriptiva">
+        </div>
+    </section>
+    <section class="seccion">
+      <h2>Osilador Armónico Simple</h2>
+      <p>El oscilador armónico simple (OAS) es un sistema físico en el que un objeto oscila en torno a una posición de equilibrio bajo la acción de una fuerza restauradora proporcional a su desplazamiento</p>
+      <p>Matemáticamente se representa como \(\frac{d^2x}{dt^2}+w^2x\) siendo \(w\) la frecuencia angular</p>
+      <p>Cada OAS cuenta con 4 fórmulas claves, las cuales son, fuerza, movimiento, periodo y frecuencia angular</p>
+      <h3>Resorte</h3>
+      <p>\(F = -k\cdot x\)</p>
+      <p>\(x(t)=A\cos{wt+\phi}\)</p>
+      <p>\(T=2\pi\sqrt{\frac{m}{k}}\)</p>
+      <p>\(w=\sqrt{\frac{k}{m}}\)</p>
+      <h3>Péndulo</h3>
+      <p>\(F = -mg\theta\)</p>
+      <p>\(\theta(t)=\theta_0\cos{wt+\phi}\)</p>
+      <p>\(T=2\pi \sqrt{\frac{L}{g}}\)</p>
+      <p>\(w=\sqrt{\frac{g}{L}}\)</p>
+    </section>
+    <section class="seccion-dos-columnas">
+        <h2>Torque</h2>
+      	<div class="columna-texto">
+	      <p>El torque es la medida de la capacidad de una fuerza para producir un giro o rotación alrededor de un eje.</p>
+	      <p>\(\tau = r\cdot F\cdot \sin\theta\)</p>
+	    </div>
+	    <div class="columna-imagen">
+            <img src="img/torque.jpg" alt="Imagen descriptiva">
+        </div>
+    </section>
+  </main>
+  	<section><a href="ejercicios" class="boton">ejercicios</a></section>
+  <footer>
+    <p>&copy; Francisco García Ortíz</p>
+  </footer>
+  <script type="module" src="java/index.js"></script>
+</body>
+</html>
